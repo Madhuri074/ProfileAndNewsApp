@@ -1,0 +1,742 @@
+{
+  "id": "66d2c62b-bdbc-4615-a0a1-55c74d89b738",
+  "version": "2.0",
+  "name": "MS744548",
+  "url": "https://github.com",
+  "tests": [{
+    "id": "80e03a5d-40dc-430b-8b8d-6defd4f77ce8",
+    "name": "CreateNewRepository",
+    "commands": [{
+      "id": "7fa4b341-52da-4f09-9959-5810b654607f",
+      "comment": "",
+      "command": "open",
+      "target": "/orgs/ualbany-software-engineering/repositories?q=&type=all&language=&sort=",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e3bc291-67a5-4fb8-97ea-61c47803a517",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1f3f473-e125-42df-9445-aa5370aaa087",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New repository",
+      "targets": [
+        ["linkText=New repository", "linkText"],
+        ["css=.width-auto", "css:finder"],
+        ["xpath=(//a[contains(@href, '/organizations/ualbany-software-engineering/repositories/new')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1652233d-700c-4ff6-b57a-2c3f3a055d76",
+      "comment": "",
+      "command": "click",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "545600ad-a807-4922-be37-d82e04a1ccae",
+      "comment": "",
+      "command": "click",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f5349e2-e5ad-43a5-9399-615d522455fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "newRepo"
+    }, {
+      "id": "6b7ea004-a8f1-459d-b517-7467ff852e6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-with-permission-fields > .hx_disabled-form-checkbox-label:nth-child(4)",
+      "targets": [
+        ["css=.js-with-permission-fields > .hx_disabled-form-checkbox-label:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='new_repository']/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52a1e965-f010-43b4-a325-70d3aab37d3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=repository_visibility_public",
+      "targets": [
+        ["id=repository_visibility_public", "id"],
+        ["name=repository[visibility]", "name"],
+        ["css=#repository_visibility_public", "css:finder"],
+        ["xpath=//input[@id='repository_visibility_public']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[6]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a909c0d0-e8d3-4334-a4a1-099cebeb3c7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create repository')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3a842b51-7dd7-4d22-9880-e45ea5131445",
+    "name": "ChangeRepositoryName",
+    "commands": [{
+      "id": "3b048c0a-3cf2-4482-b731-8466aa3a5e33",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fea17e1-ad91-423a-9c13-cf527e4d74b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56873fe2-2382-4e34-b4e8-1fc7f8305be5",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.js-site-search-focus", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd2073c-5e00-44e9-96d9-40a4ee07362c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jump-to-suggestion-repository-574739112 .jump-to-suggestion-name",
+      "targets": [
+        ["css=#jump-to-suggestion-repository-574739112 .jump-to-suggestion-name", "css:finder"],
+        ["xpath=//li[@id='jump-to-suggestion-repository-574739112']/a/div[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "465131ca-c464-427c-946a-9ea1b3816774",
+      "comment": "",
+      "command": "click",
+      "target": "id=settings-tab",
+      "targets": [
+        ["id=settings-tab", "id"],
+        ["linkText=Settings", "linkText"],
+        ["css=#settings-tab", "css:finder"],
+        ["xpath=//a[@id='settings-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='repository-container-header']/nav/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ualbany-software-engineering/newRepo/settings')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08f04965-1c80-415b-93a9-3211939b3c55",
+      "comment": "",
+      "command": "click",
+      "target": "id=rename-field",
+      "targets": [
+        ["id=rename-field", "id"],
+        ["name=new_name", "name"],
+        ["css=#rename-field", "css:finder"],
+        ["xpath=//input[@id='rename-field']", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/form/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "886147bf-fa8d-4eb4-9608-a7d84351cd09",
+      "comment": "",
+      "command": "type",
+      "target": "id=rename-field",
+      "targets": [
+        ["id=rename-field", "id"],
+        ["name=new_name", "name"],
+        ["css=#rename-field", "css:finder"],
+        ["xpath=//input[@id='rename-field']", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/form/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "renamedRepo"
+    }, {
+      "id": "aac092f3-6ffb-444e-b667-adeb233758ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-self-end",
+      "targets": [
+        ["css=.flex-self-end", "css:finder"],
+        ["xpath=(//button[@type='submit'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/form/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rename')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "26fbef8d-8ae5-4f3c-8ed2-3908eaedacf0",
+    "name": "DisableActions",
+    "commands": [{
+      "id": "0ac71119-f1e1-48f3-97f4-6156f2c2fddb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05eb79e5-e783-47cc-9bce-fbca6d54e9ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8db5dc2f-d0df-49bf-8ac9-0e7de9b7b72b",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.js-site-search-focus", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8949cdf3-b070-4052-8756-b63720a686e0",
+      "comment": "",
+      "command": "//click",
+      "target": "css=#jump-to-suggestion-repository-574739112 .jump-to-suggestion-name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90172f13-3110-4426-a8fd-693c84829bd4",
+      "comment": "",
+      "command": "//click",
+      "target": "id=settings-tab",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f668b78-bd88-410d-868e-d1a4dea5f689",
+      "comment": "",
+      "command": "//click",
+      "target": "css=#c07c48da305329aaa406bdf3e42cc588 > .ActionListItem-label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dfe4e4a-229f-4616-a844-4e159141598f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\32 b31c116d26781bf77b8f68e945021a8 > .ActionListItem-label",
+      "targets": [
+        ["css=#\\32 b31c116d26781bf77b8f68e945021a8 > .ActionListItem-label", "css:finder"],
+        ["xpath=//a[@id='2b31c116d26781bf77b8f68e945021a8']/span", "xpath:idRelative"],
+        ["xpath=//li[5]/nav-list/ul/li[2]/ul/li/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0350e68-f7e7-42fc-b0cf-9975f88a3d41",
+      "comment": "",
+      "command": "click",
+      "target": "id=allowedactions_disabled",
+      "targets": [
+        ["id=allowedactions_disabled", "id"],
+        ["css=#allowedactions_disabled", "css:finder"],
+        ["xpath=//input[@id='allowedactions_disabled']", "xpath:attributes"],
+        ["xpath=//turbo-frame[@id='repo-content-turbo-frame']/div/div/div[2]/div/div/actions-policy-form/form/div/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ba166f9-3dba-4d1d-b676-bc657160d9e0",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.d-flex:nth-child(3) > .FormField-input", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//turbo-frame[@id='repo-content-turbo-frame']/div/div/div[2]/div/div/actions-policy-form/form/div/button", "xpath:idRelative"],
+        ["xpath=//actions-policy-form/form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8bfcaa31-780d-43d2-ba0f-98b1e1fe1ff0",
+    "name": "ChangeYourNameOnPublicProfile",
+    "commands": [{
+      "id": "0e61ac11-adce-449a-827c-ef0e0c36cd89",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96c29fa6-bfe6-4e8f-85a7-65572dfc8719",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "744652a8-8eaa-4d66-a0c4-24636f5c1af3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-feature-preview-indicator-container > .Header-link",
+      "targets": [
+        ["css=.js-feature-preview-indicator-container > .Header-link", "css:finder"],
+        ["xpath=//div[7]/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5717e888-097c-4d38-b9b6-3efb0a8503cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Your profile",
+      "targets": [
+        ["linkText=Your profile", "linkText"],
+        ["css=.js-feature-preview-indicator-container .dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Your profile')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Madhuri074')])[3]", "xpath:href"],
+        ["xpath=//div[7]/details/details-menu/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Your profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "270fcff9-f33c-4c2a-b5c0-7ebd8119c50e",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.js-profile-editable-edit-button", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d780e9-fd61-4d84-9f75-5c667a3246ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_profile_name",
+      "targets": [
+        ["id=user_profile_name", "id"],
+        ["name=user[profile_name]", "name"],
+        ["css=#user_profile_name", "css:finder"],
+        ["xpath=//input[@id='user_profile_name']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d43ab79-63bd-4344-a066-ca52346a1b5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_profile_name",
+      "targets": [
+        ["id=user_profile_name", "id"],
+        ["name=user[profile_name]", "name"],
+        ["css=#user_profile_name", "css:finder"],
+        ["xpath=//input[@id='user_profile_name']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Madhuri Somavarapu"
+    }, {
+      "id": "8548a021-88e1-49ae-8d14-d8655b609b5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b0086a2d-ba2b-4106-940a-3e914a77ec7f",
+    "name": "AddBio",
+    "commands": [{
+      "id": "bb25a68d-c205-4762-b76c-0a65e0079ba9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae27915e-04a2-405b-b6e9-0157eb022821",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1064x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cb06829-e3cc-481a-86e8-59cecb6b6b33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-link > .avatar-small",
+      "targets": [
+        ["css=.Header-link > .avatar-small", "css:finder"],
+        ["xpath=(//img[@alt='@Madhuri074'])[2]", "xpath:img"],
+        ["xpath=//summary/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d88f28b-87ae-4331-932f-48b49d853280",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Your profile",
+      "targets": [
+        ["linkText=Your profile", "linkText"],
+        ["css=.js-feature-preview-indicator-container .dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Your profile')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Madhuri074')])[3]", "xpath:href"],
+        ["xpath=//div[7]/details/details-menu/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Your profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a804ecd9-59bf-4ba7-8f20-547a7d6d9cc4",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.js-profile-editable-edit-button", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16a6ce5d-1203-47f7-aef4-3e2ddd2b217d",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_profile_bio",
+      "targets": [
+        ["id=user_profile_bio", "id"],
+        ["name=user[profile_bio]", "name"],
+        ["css=#user_profile_bio", "css:finder"],
+        ["xpath=//textarea[@id='user_profile_bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3960550-d3d4-42e2-8844-1c113d6c4e74",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_profile_bio",
+      "targets": [
+        ["id=user_profile_bio", "id"],
+        ["name=user[profile_bio]", "name"],
+        ["css=#user_profile_bio", "css:finder"],
+        ["xpath=//textarea[@id='user_profile_bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "My Biodata"
+    }, {
+      "id": "b2e620fc-e00b-4af8-b2c1-84bdca21755b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container-xl:nth-child(2) .Layout-sidebar",
+      "targets": [
+        ["css=.container-xl:nth-child(2) .Layout-sidebar", "css:finder"],
+        ["xpath=//main/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d00d068-2854-4984-802c-be973cca74c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f90758c1-0f2f-4e83-8c58-53ac86d207ff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.avatar-group-item > .avatar",
+      "targets": [
+        ["css=.avatar-group-item > .avatar", "css:finder"],
+        ["xpath=//img[@alt='@ualbany-software-engineering']", "xpath:img"],
+        ["xpath=//div[6]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeae309a-3f5d-48d1-be11-7637eeeeca83",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.avatar-group-item:nth-child(2) > .avatar",
+      "targets": [
+        ["css=.avatar-group-item:nth-child(2) > .avatar", "css:finder"],
+        ["xpath=//img[@alt='@ualbany-software-engineering']", "xpath:img"],
+        ["xpath=//div[6]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d791def7-e60c-4004-b57b-a58f15321ce4",
+    "name": "AddNewIssue",
+    "commands": [{
+      "id": "1bd91168-f125-4a96-b997-367fddcb5515",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d984413b-8edf-4547-a375-52426ff4b2b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0a56051-3d7a-4887-be5b-4bc29455e61d",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.js-site-search-focus", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "398b2fbf-81cd-4e1a-8dbf-3e509b7cebc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jump-to-suggestion-repository-242255816 .jump-to-suggestion-name",
+      "targets": [
+        ["css=#jump-to-suggestion-repository-242255816 .jump-to-suggestion-name", "css:finder"],
+        ["xpath=//li[@id='jump-to-suggestion-repository-242255816']/a/div[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3c8ad1-6dbb-42b9-8d1b-12c82df13994",
+      "comment": "",
+      "command": "click",
+      "target": "id=issues-tab",
+      "targets": [
+        ["id=issues-tab", "id"],
+        ["css=#issues-tab", "css:finder"],
+        ["xpath=//a[@id='issues-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='repository-container-header']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ninadpchaudhari/React-Tutorial/issues')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "200ecf81-abb5-4232-9b19-b229aea4bbc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-md-block",
+      "targets": [
+        ["css=.d-md-block", "css:finder"],
+        ["xpath=//turbo-frame[@id='repo-content-turbo-frame']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'New issue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d549eed6-5bf4-4bbc-9c05-65e3bbbf5718",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '/ninadpchaudhari/React-Tutorial/issues/new?assignees=&labels=bug&template=bug_report.yml')]",
+      "targets": [
+        ["linkText=Get started", "linkText"],
+        ["css=.Box-row:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Get started')]", "xpath:link"],
+        ["xpath=//div[@id='repo-content-pjax-container']/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ninadpchaudhari/React-Tutorial/issues/new?assignees=&labels=bug&template=bug_report.yml')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79d01e0c-2355-48f8-8a70-ccfc5f7691bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=issue_title",
+      "targets": [
+        ["id=issue_title", "id"],
+        ["name=issue[title]", "name"],
+        ["css=#issue_title", "css:finder"],
+        ["xpath=//input[@id='issue_title']", "xpath:attributes"],
+        ["xpath=//form[@id='new_issue']/div/div/div/div/div/div/div/text-expander/input", "xpath:idRelative"],
+        ["xpath=//text-expander/input", "xpath:position"]
+      ],
+      "value": "SeleniumTest"
+    }, {
+      "id": "6a2bcabd-0f3e-4084-845c-1248f2956e0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2) > .form-group-body",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-group-body", "css:finder"],
+        ["xpath=//form[@id='new_issue']/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "136202a9-775f-4eba-aad0-dd5e6ff9258f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='new_issue']/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[2]/div",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-group-header", "css:finder"],
+        ["xpath=//form[@id='new_issue']/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "Bug description"
+    }, {
+      "id": "4bd6a030-17b9-47f8-a2c2-ca72162b6945",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(3) > .form-group-body",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .form-group-body", "css:finder"],
+        ["xpath=//form[@id='new_issue']/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e2eefe4-8434-4275-b7ba-5102750122ad",
+      "comment": "",
+      "command": "//type",
+      "target": "id=issue_body",
+      "targets": [],
+      "value": "Steps to reproduce the issue"
+    }, {
+      "id": "1c76b811-de6c-4f41-94d1-f1eabcaf7603",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[8]", "xpath:attributes"],
+        ["xpath=//form[@id='new_issue']/div/div/div/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div/div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit new issue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0b82b6b8-da01-4046-be31-278f24c45943",
+    "name": "ClickRepoStar",
+    "commands": [{
+      "id": "14536ca7-144c-41ac-9feb-61afa6643fd6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ac8e71c-daef-49bd-8fd3-5bcc00b8d7f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81a86dba-6271-493f-b3d8-1a3a46ae3fe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-search-wrapper",
+      "targets": [
+        ["css=.header-search-wrapper", "css:finder"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f3621a-b585-4373-a095-d08c3ebdd268",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jump-to-suggestion-repository-242255816 .jump-to-suggestion-name",
+      "targets": [
+        ["css=#jump-to-suggestion-repository-242255816 .jump-to-suggestion-name", "css:finder"],
+        ["xpath=//li[@id='jump-to-suggestion-repository-242255816']/a/div[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2614217f-700a-445d-a49b-86ab4621a0ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .starred .d-inline",
+      "targets": [
+        ["css=li .starred .d-inline", "css:finder"],
+        ["xpath=//div[@id='repository-container-header']/div/ul/li[3]/div/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "355f4777-004f-483d-a320-7f703aefb8e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .unstarred .d-inline",
+      "targets": [
+        ["css=li .unstarred .d-inline", "css:finder"],
+        ["xpath=//div[@id='repository-container-header']/div/ul/li[3]/div/div[2]/form/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "686f9092-ea08-4aa4-9494-1be81b2c5b60",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80e03a5d-40dc-430b-8b8d-6defd4f77ce8"]
+  }],
+  "urls": ["https://github.com/"],
+  "plugins": []
+}
